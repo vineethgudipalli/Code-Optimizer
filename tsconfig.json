@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES2020", // Or a newer ES version if appropriate for your VS Code target
+        "lib": [
+            "ES2020",
+            "dom"
+        ],
+        "outDir": "dist",
+        "rootDir": "src",
+        "sourceMap": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "types": [
+            "node", // It's common to include node types
+            "vscode" // For VS Code extension development
+        ]
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        ".vscode-test"
+    ]
+}
